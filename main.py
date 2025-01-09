@@ -131,7 +131,8 @@ class App(QWidget):
         self.time_elapsed.setText(f"Время записи: {time.seconds}с")
 
 
-app = QApplication(sys.argv)
-window = App()
-window.show()
-app.exec()
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = App()
+    window.show()
+    app.exec()
